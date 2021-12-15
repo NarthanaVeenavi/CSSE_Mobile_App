@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCategoryActivity"
+    android:background="@color/blue_light">
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Add New Items"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/slogan_category"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chocolate"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/hardware" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/shaped_cakes"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/generators"
+            android:layout_marginLeft="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/x_mas_cakes"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/plumbing"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1_1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/linear1_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/category1"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="Hardware Tools"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/category2"
+            android:layout_width="123dp"
+            android:layout_height="match_parent"
+            android:text="Power Generators"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/category3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plumbing"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/linear1_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/heart"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/painting" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/kids_cakes"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/roofing"
+            android:layout_marginLeft="10dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/flowers"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/cons_materials"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/category4"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="Painting"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/category5"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:text="Roofing"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/category6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cons_Materials"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/weddings"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/electrical" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/smiley"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/fire_safety"
+            android:layout_marginLeft="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/picture_cakes"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/flooring"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3_1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/linear3_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/category7"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="Electrical items"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/category8"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Fire Safety"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/category9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flooring"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+
+            />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/maintain_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_above="@+id/check_orders_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_1"
+        android:text="Maintain Items"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/check_orders_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_above="@+id/admin_logout_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_1"
+        android:text="Check New Orders"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        />
+
+
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border_1"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        />
+
+
+
+
+</RelativeLayout>

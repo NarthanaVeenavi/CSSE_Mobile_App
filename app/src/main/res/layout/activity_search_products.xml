@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchProductsActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/r5"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue_theme"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/colorPrimaryDark" >
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Sensetic"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="13dp"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_menu"
+        android:background="@color/blue_theme"
+        android:layout_marginLeft="10dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="690dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/r5">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <it.sephiroth.android.library.bottomnavigation.BottomNavigation
+        android:id="@+id/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginTop="675dp"
+        android:layout_gravity="bottom"
+        app:bbn_badgeProvider="@string/bbn_badgeProvider"
+        app:bbn_entries="@menu/bottem_nav"
+        app:bbn_scrollEnabled="true"
+        app:layout_behavior="@string/bbn_phone_view_behavior" />
+
+    <EditText
+        android:id="@+id/search_product_name"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/border_1"
+        android:hint="Search Product Name.."
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="50dp"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="70dp"
+        android:padding="9dp"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:background="@drawable/ic_nav_search"
+        android:textStyle="bold" />
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginLeft="270dp"-->
+    <!--        android:layout_marginTop="72dp"-->
+    <!--        android:src="@drawable/ic_nav_search" />-->
+
+</RelativeLayout>

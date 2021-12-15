@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "288754871240",
+    "firebase_url": "https://csse-project-ac7cf-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "csse-project-ac7cf",
+    "storage_bucket": "csse-project-ac7cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288754871240:android:7f783fc9dc66d75b1feefd",
+        "android_client_info": {
+          "package_name": "com.example.csse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288754871240-5bk3vr59hgtu10ql926gq9meg9mv1hb1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.csse",
+            "certificate_hash": "d24a35acb1f455a52793f0df7ed4ee3077381526"
+          }
+        },
+        {
+          "client_id": "288754871240-sqd3d1ijunm1fu4juano9v10qcmcc513.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVaYkIXYOM-bcnLi4nzvIxJzGOErVgkSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288754871240-sqd3d1ijunm1fu4juano9v10qcmcc513.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

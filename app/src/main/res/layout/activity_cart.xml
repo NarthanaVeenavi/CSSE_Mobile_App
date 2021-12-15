@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <RelativeLayout
+        android:id="@+id/r5"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue_theme"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/colorPrimaryDark" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtMsg1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_theme"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:text="Your order has been created successfully. Soon it will be verified."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_menu"
+        android:background="@color/blue_theme"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Sensetic"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:id="@+id/shopping_cart_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r5"
+        android:text="Item List"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/shopping_cart_heading"
+        android:layout_marginTop="10dp"
+        android:layout_height="505dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_theme"
+        android:text="Checkout"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="634dp"
+        android:background="@color/blue_light"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

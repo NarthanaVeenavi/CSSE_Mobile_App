@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ConfirmFinalOrderActivity">
+
+    <RelativeLayout
+        android:id="@+id/r5"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue_theme"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/colorPrimaryDark" >
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_menu"
+        android:background="@color/blue_theme"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Sensetic"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Write Your Shipment Details"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/shippment_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/border_1"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Name"
+        />
+
+    <EditText
+        android:id="@+id/shippment_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/shippment_name"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/border_1"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="your Phone Number"
+        />
+
+    <EditText
+        android:id="@+id/shippment_address"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/shippment_phone_number"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/border_1"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Site Address"
+        />
+
+    <EditText
+        android:id="@+id/shippment_city"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/shippment_address"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/border_1"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your City Name"
+        />
+
+    <Button
+        android:id="@+id/confirm_final_order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="Confirm"
+        android:background="@drawable/border_1"
+        android:backgroundTint="#8c8c8c"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+
+    <it.sephiroth.android.library.bottomnavigation.BottomNavigation
+        android:id="@+id/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginTop="670dp"
+        android:layout_gravity="bottom"
+        app:bbn_badgeProvider="@string/bbn_badgeProvider"
+        app:bbn_entries="@menu/bottem_nav"
+        app:bbn_scrollEnabled="true"
+        app:layout_behavior="@string/bbn_phone_view_behavior" />
+
+</RelativeLayout>
